@@ -1,0 +1,53 @@
+body {
+    margin: 0; /* ページのデフォルトのマージンをゼロに設定 */
+    background-color: #DCDCDC; /* body 要素の背景色を設定 */
+}
+.page_title {
+    background-color: #2E8B57;
+    margin-left: 10vw;
+    margin-right: 10vw; /* 右のマージンを300pxから250pxに変更 */
+    padding: 20px; /* 適切な余白を追加 */
+    color: white; /* テキストの色を白に設定 */
+}
+.page_titletxt {
+    text-align: center;
+}
+.side_menu {
+    background-color: #a6a6a6;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    height: 100vh;
+    width: 250px;
+}
+.main{
+    top: 0;
+    margin-left: 5vh;
+    margin-right: 5vw;
+    background-color: #FFFFFF;
+}
+.bottom-text {
+    position: fixed;
+    bottom: 0;
+    left: 50%; /* センタリングするために左側のマージンを50%に設定 */
+    transform: translateX(-50%); /* センタリングのためにマイナスの50%移動 */
+    color: black; /* テキストの色を白に設定 */
+    font-size: 10px;
+}
+.toggle-button{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 2;
+}
+.main img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.title_img{
+	width: 100%;
+    height: auto;
+    display: block;
+}
