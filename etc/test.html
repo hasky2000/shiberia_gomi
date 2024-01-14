@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    #img {
+        display: none; /* 最初は非表示に設定 */
+    }
+    #noimg {
+        display: block; /* 最初は表示に設定 */
+    }
+  </style>
+</head>
+<body>
+
+    <div>
+        <button onclick="test()">テスト</button>
+    </div>
+    <div id="noimg">
+        <img src="../title_img.png" id="img"> <!-- CSSスタイルに合わせてIDを修正 -->
+    </div>
+  
+
+  <script>
+    function test(){
+        var imgElement = document.getElementById("img");
+        imgElement.style.display = (imgElement.style.display === "none") ? "block" : "none";
+    }
+  </script>
+
+</body>
+</html>
