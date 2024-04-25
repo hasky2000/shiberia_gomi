@@ -86,3 +86,31 @@ body {
     right: 0px;
     top: 0px;
 }
+.top_menus{
+    display: flex;
+    height: 40px;
+}
+.top_menu{
+    
+    flex: 1;
+    padding: 5px;
+    background-color: #DCDCDC;
+    text-decoration: none;
+    color: #000;
+    transition: background-color 0.2s ease;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    margin-right: 5px;
+    margin-bottom: 5px;
+
+}
+.top_menu:last-child{
+    margin-right: 0;
+}
+.top_menu:hover{
+    background-color: #AAA;
+    
+}
