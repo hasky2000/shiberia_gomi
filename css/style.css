@@ -126,10 +126,25 @@ body {
     color: #000;
     text-decoration: none;
     text-align: center;
+    
+    
 }
 .side_menu_txt_style:hover{
     background-color: #DCDCDC;
+    transition: transform 0.1s ease;
+    transform: scale(1.05);
 }
 .blog_title{
+    text-align: center;
+}
+.blog_main_title a{
+    display: block;
+    width: max-content;
+    background-color: #DCDCDC;
+    border-radius: 3px;
+    margin: 20px;
+    padding: 10px;
+    color: #000;
+    text-decoration: none;
     text-align: center;
 }

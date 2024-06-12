@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "segfont";
+    src: url("../fonts/DSEG7Classic-BoldItalic.ttf") format(truetype);
+}
+.clock_p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.time{
+    font-size: 20vh;
+    font-family: "segfont",sans-serif;
+}
