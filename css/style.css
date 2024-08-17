@@ -3,11 +3,8 @@ body {
     background-color: #DCDCDC; /* body 要素の背景色を設定 */
 }
 .page_title {
-    background-color: #2E8B57;
-    margin-left: 10vw;
-    margin-right: 10vw; /* 右のマージンを300pxから250pxに変更 */
-    padding: 20px; /* 適切な余白を追加 */
-    color: white; /* テキストの色を白に設定 */
+    background-color: aqua;
+    margin-top: 0vh;
 }
 .page_titletxt {
     text-align: center;
@@ -21,11 +18,24 @@ body {
     width: 250px;
     transition: right 0.3s ease;
 }
+.mainandmenu{
+    display: flex;
+}
 .main{
+    width: 80%;
     top: 0;
-    margin-left: 5vh;
-    margin-right: 5vw;
+    margin-left: 1vw;
     background-color: #FFFFFF;
+}
+.menu{
+    position: fixed;
+    right: 0px;
+    width: 17%;
+    margin-right: 0vw;
+    background-color: #FFFFFF;
+}
+.txt_mid{
+    text-align: center;
 }
 .bottom-text {
     position: fixed;
