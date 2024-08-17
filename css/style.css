@@ -22,15 +22,17 @@ body {
     display: flex;
 }
 .main{
-    width: 80%;
+    flex: 8;
     top: 0;
     margin-left: 1vw;
     background-color: #FFFFFF;
 }
 .menu{
-    position: fixed;
+    /*position: fixed;*/
+    flex: 2;
     right: 0px;
-    width: 17%;
+    /*width: 17%;*/
+    margin-left: 1vw;
     margin-right: 0vw;
     background-color: #FFFFFF;
 }
