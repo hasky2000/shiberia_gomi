@@ -4,10 +4,15 @@ body {
 }
 .page_title {
     background-color: aqua;
-    margin-top: 0vh;
+    margin-top: 0px;
+    padding: 0px;
 }
 .page_titletxt {
+    margin-top: 0px;
+    margin-bottom: 5vh;
     text-align: center;
+    font-size: 10vw;
+    font-weight: bold;
 }
 .side_menu {
     background-color: #a6a6a6;
@@ -24,20 +29,60 @@ body {
 .main{
     flex: 8;
     top: 0;
+    padding: 5px;
     margin-left: 1vw;
     background-color: #FFFFFF;
 }
 .menu{
+    text-align: center;
     /*position: fixed;*/
     flex: 2;
-    right: 0px;
     /*width: 17%;*/
     margin-left: 1vw;
     margin-right: 0vw;
     background-color: #FFFFFF;
 }
+.menu a{
+    padding: 5px;
+    text-decoration: none;
+    color: #000;
+    background-color: #FFFFFF;
+}
+.menu a:hover{
+    background-color: #e9e9e9;
+    border-radius: 4px;
+}
 .txt_mid{
     text-align: center;
+}
+.topimg{
+    position: relative;
+}
+.topimgtxt{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-shadow: 0px 0px 10px #000;
+}
+.home_link_flexbox{
+    display: flex;
+    flex-flow: row wrap;
+}
+.home_link_son{
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: #d4d4d4b2;
+    color: #000;
+    text-decoration: none;
+
+}
+.home_link_son:hover{
+    transition-duration: 0.7s;
+    background-color: #b9b9b9b2;
 }
 .bottom-text {
     position: fixed;
@@ -106,7 +151,6 @@ body {
     height: 40px;
 }
 .top_menu{
-    
     flex: 1;
     padding: 5px;
     background-color: #DCDCDC;
@@ -121,6 +165,9 @@ body {
     margin-right: 5px;
     margin-bottom: 5px;
 
+}
+.top_menu a{
+    text-align: center;
 }
 .top_menu:last-child{
     margin-right: 0;
@@ -142,6 +189,20 @@ body {
 .side_menu_txt_style:hover{
     background-color: #DCDCDC;
 }
-.blog_title{
+.modflexbox{
+    display: flex;
+}
+.modflexboxson{
+    margin: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 0.15rem solid #ebebeb;
+    width: 200px;
     text-align: center;
+}
+.modflexboxson:hover{
+    background-color: #ebebeb;
+}
+.modflexboxson img{
+    border-radius: 5px;
 }

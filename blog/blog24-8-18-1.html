@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja-JP">
+    <head>
+        <meta charset="utf-8"/>
+        <title>シベリアのごみ屋敷｜home</title>
+        <link rel="stylesheet" href="../css/style.css" />
+    </head>
+    <body>
+        <div class="page_title">
+            <p class="page_titletxt">シベリアのごみ屋敷</p>
+        </div>
+        <div class="mainandmenu">
+            <div class="main">
+                <h1>世界一わかりにくいgithub pagesをgoogle検索に引っかかるようにする方法の解説</h1>
+                <h2>どーにゅー</h2>
+                <p>　初めましての方は初めまして。はすきーです。<br>
+                いろいろとやることが終わって余裕ができたので、この何の役にも立ってなかったサイトを再構築してます。<br>
+                最初はきれいにするだけだったんだけど、せっかくならぐるぐる先生の検索に引っかかってほしかったのでいろいろ試行錯誤してみました。<br>
+                多分需要ないけど一応、githubPagesで建てたサイトgoogle検索に引っ掛けるためにやったことを書いていきます。</p>
+            <h2>実際にやったこと</h2>
+            <p>　まず、ぐるぐるアカウントを用意しましょう。<br>
+            次にgoogle search consoleにアクセスします</p>
+            <a href="https://search.google.com/search-console/welcome?hl=ja">search consoleリンク</a>
+            <p>アクセスしたら、右のURLプレフィックスに自分のぎっとはぶぺーじずのurlをぺってします。そして続行</p>
+            <img src="image\スクリーンショット 2024-08-18 210849.png">
+            <p>次に、所有権の確認がうんたらって言われるから、おすすめの確認方法って書いてある　HTML ファイル　についてるhtmlファイルをDL。<br>
+            そのDLしたhtmlを、Githubリポジトリのmain（index.htmlとか入ってるとこ）にべー！ってする。<br>
+            そしてプッシュ。反映されるまでしばらくかかるからtwitterでも見ておきましょう。<br>
+            反映されたかなと思ったら、確認ボタンをぽち。多分証明しましたって言われる。<br>
+            次に、サイトマップを登録する。index.htmlとかがはいってるところに"_config.yml"ってファイルを作る。そして中に<br>
+            <code>plugins:<br>
+                - jekyll-sitemap
+            </code><br>
+            って書く。そしてﾌﾟｼｭｰじゃなくてプッシュ。そしたらサイトのほうにsitemap.xmlが自動生成されます。<br>
+            https:/ユーザー名.github.io/リポジトリ名/sitemap.xml<br>
+            に入ってると思うよ。確認したら、search consoleのサイトマップを押して、新しいサイトマップの追加に"sitemap.xml"って書いて送信。<br>
+            多分これまでしたらそのうちぐるぐるで引っ掛かるようになる。私は翌日にはもう引っかかった。<br>
+            以上。
+            </p>
+            </div>
+            <div class="menu">
+                <p>めにゅー</p>
+                <a class="nondecolink" href="https://www.youtube.com/@hasky-ci9dy">ようつべ</a>
+                <p></p>
+                <a class="nondecolink" href="https://www.nicovideo.jp/user/125022380">にこにこ</a>
+                <p></p>
+                <a class="twitter-timeline" href="https://twitter.com/hasky_yamagata?ref_src=twsrc%5Etfw">Tweets by hasky_yamagata</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+            </div>
+        </div>
+        
+    </body>
+</html>

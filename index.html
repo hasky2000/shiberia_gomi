@@ -7,17 +7,59 @@
     </head>
     <body>
         <div class="page_title">
-            <p>ページタイトル</p>
+            <p class="page_titletxt">シベリアのごみ屋敷</p>
         </div>
         <div class="mainandmenu">
             <div class="main">
-                <p>本文</p>
-                <p>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br></p>
+                <h1>シベリアのごみ屋敷へようこそ</h1>
+                <!--ここに画像のやつ-->
+                <div class="topimg">
+                    <script type="text/javascript">
+                        var imglist = new Array(
+                            "image/img1.png",
+                            "image/img2.png",
+                            "image/img3.png",
+                            "image/img4.png",
+                            "image/img5.png"
+                        );
+                        var namelist = new Array(
+                            "宗教改革エアプ勢さん",
+                            "宗教改革エアプ勢さん",
+                            "宗教改革エアプ勢さん",
+                            "宗教改革エアプ勢さん",
+                            "宗教改革エアプ勢さん"
+                        )
+                        var selectnum = Math.floor(Math.random()*imglist.length);
+                        var output = "<img src=" + imglist[selectnum] + ">";
+                        document.write(output);
+                        var output = "<p class='topimgtxt'>" + namelist[selectnum] + "提供</p>";
+                        document.write(output);
+                        
+                    </script>
+                </div>
+                <p>↑ここの画像募集してます。Twitter(現X)でDM飛ばしてくれたら採用するかも</p>
+                <p>リンク:</p>
+                <div class="home_link_flexbox">
+                    <a href="blog\blog.html" class="home_link_son">ブログ</a>
+                    <a href="https://www.youtube.com/@hasky-ci9dy" class="home_link_son">ようつべ</a>
+                    <p class="home_link_son">にこにこ</p>
+                    <a href="game_blog\sw_main.html" class="home_link_son">ストワ関連</a>
+                    <a href="game_blog\sw_mod_haifu.html" class="home_link_son">MODとか</a>
+                </div>
+                <h2>Q.このサイトなに？</h2>
+                <p>A.中の人が言いたいことをぶちまけたり作ったMODやらをべーってするとこ</p>
+                <h2>Q.そもそもお前だれ？</h2>
+                <p>A.haskyと申します。stormworksやらマイクラやらの動画をごくわずかに投稿してます。よろしくお願いします。</p>
+                <h2>Q.このサイト使いにくいんだけど</h2>
+                <p>A.ごめんねこのサイト自作だから許して</p>
+                
             </div>
-            <div class="menu" class="txt_mid">
-                <p class="txt_mid">めにゅー</p>
-                <p class="txt_mid">ようつべ</p>
-                <p  class="txt_mid">にこにこ</p>
+            <div class="menu">
+                <p>めにゅー</p>
+                <a class="nondecolink" href="https://www.youtube.com/@hasky-ci9dy">ようつべ</a>
+                <p></p>
+                <a class="nondecolink" href="https://www.nicovideo.jp/user/125022380">にこにこ</a>
+                <p></p>
                 <a class="twitter-timeline" href="https://twitter.com/hasky_yamagata?ref_src=twsrc%5Etfw">Tweets by hasky_yamagata</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
             </div>
         </div>

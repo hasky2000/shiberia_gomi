@@ -10,5 +10,6 @@
             "name": "LifeBoatAPI",
             "gitUrl": "https://github.com/nameouschangey/Stormworks_LifeBoatAPI_MC.git"
         }
-    ]
+    ],
+    "livePreview.defaultPreviewPath": "/index.html"
 }
