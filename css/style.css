@@ -203,6 +203,8 @@ body {
     border: 0.15rem solid #ebebeb;
     width: 200px;
     text-align: center;
+    text-decoration: none;
+    color: #000;
 }
 .modflexboxson:hover{
     background-color: #ebebeb;
