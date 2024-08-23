@@ -87,7 +87,12 @@ body {
 }
 .newsbox{
     text-align: center;
-    width: 600px;
+    width: 500px;
+    text-decoration: none;
+    color: #000;
+}
+.newsbox img{
+    width: 400px;
 }
 .textmannnaka{
     text-align: center;
@@ -106,6 +111,7 @@ body {
     border-radius: 4px;
 }
 .trucks{
+    background-color: #ffffff;
     display: flex;
     align-items: start;
     margin-left: 70px;
