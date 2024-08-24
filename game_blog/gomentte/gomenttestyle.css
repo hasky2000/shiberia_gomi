@@ -6,16 +6,15 @@
 
 html{
     scroll-behavior: smooth;
-    
-    
-      
 }
+/*ここからーーーーーーーーーーーーーーーーーーーーーーーー*/
 body {
     /*全角ゴシックフォントのやつ*/
     font-family: "Zen Kaku Gothic New", sans-serif;
-    margin: 0; /* ページのデフォルトのマージンをゼロに設定 */
-    background-color: rgb(235, 235, 235); /* body 要素の背景色を設定 */
+    margin: 0;
+    background-color: rgb(235, 235, 235);
 }
+/*ヘッダー*/
 .header{
     display: flex;
     position: fixed;
@@ -24,7 +23,6 @@ body {
     background-color: rgb(235, 235, 235);
     width: 100%;
     height: 60px;
-
 }
 .logos{
     display: flex;
@@ -41,19 +39,27 @@ body {
         display: none;
     }
 }
+/*めぬー*/
 .menu{
+    margin-left: 20px;
     flex-grow: 1;
     display: flex;
     justify-content: start;
 }
 .menu p{
-    
     border-left: 2px solid #9b9b9b;
     padding-left: 4px;
     padding-right: 20px;
     white-space:nowrap;
     font-weight: bold;
+    transition: 0.3s;
+    padding-bottom: 4px;
+}
+.menu a{
+    white-space:nowrap;
+    font-weight: bold;
     transition: 0.5s;
+    padding-bottom: 5px;
 }
 .menu p:hover{
     background-color: #474747;
@@ -67,6 +73,7 @@ body {
 .menu a:hover{
     color: #c9c9c9;
 }
+/*めいん*/
 .main{
     margin-top: 90px;
 }
@@ -76,6 +83,7 @@ body {
 .main h2{
     text-align: center;
 }
+/*home用*/
 .top_imgs{
     margin: 10px;
 }
@@ -86,10 +94,29 @@ body {
     display: flex;
 }
 .newsbox{
+    margin: 20px;
+    border-radius: 2px;
     text-align: center;
-    width: 500px;
+    width: 420px;
     text-decoration: none;
     color: #000;
+    background-color: #ffffff;
+    position: relative;
+}
+.newsbox::before{
+    content: "";
+    top: 0;
+    left: 0;
+    border-bottom: 2em solid transparent;
+    border-left: 2em solid rgb(132,43,50);
+    position: absolute;
+    z-index: 100;
+    transition: 0.5s;
+}
+.newsbox:hover::before{
+    border-bottom: 3em solid transparent;
+    border-left: 3em solid rgb(132,43,50);
+
 }
 .newsbox img{
     width: 400px;
@@ -107,9 +134,16 @@ body {
     width: 150px;
     margin: 20px;
     text-align: center;
-    border: 2px solid #ffffff;
-    border-radius: 4px;
+    border-radius: 2px;
+    border-left: 0.3em solid rgb(132,43,50);
+    background-color: #ffffff;
+    transition: 0.5s;
 }
+.prod_child:hover{
+    background-color: #474747;
+    color: #c9c9c9;
+}
+/*製品/自動車用*/
 .trucks{
     background-color: #ffffff;
     display: flex;
@@ -138,6 +172,7 @@ body {
     text-decoration: none;
     color: #000;
 }
+/*下段ヘッダー*/
 .header2{
     display: flex;
     position: fixed;
@@ -154,6 +189,7 @@ body {
     text-decoration: none;
     color: #000;
 }
+/*リンクの色のやつ*/
 .link{
     text-decoration: none;
     color: #000;
